@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+  tasks:
+    - name: update all packages - this is like running the 'dnf update' command
+      ansible.builtin.dnf:
+        name: "*"
+        state: latest

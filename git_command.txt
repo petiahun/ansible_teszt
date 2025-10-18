@@ -1,0 +1,9 @@
+ansible-playbook --ask-become-pass install_apache.yml
+
+git status
+git add ansible.cfg 
+git commit -m "ez egy jo config, lefutott hiba nelkul az httpd install"
+git push
+
+
+
