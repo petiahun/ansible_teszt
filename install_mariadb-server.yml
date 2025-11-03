@@ -1,0 +1,7 @@
+---
+- hosts: dbserver
+  tasks:
+  - name: Install the latest version of MariaDB
+    ansible.builtin.dnf:
+      name: mariadb-server
+      state: latest
